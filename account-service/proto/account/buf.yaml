@@ -1,0 +1,5 @@
+version: v1
+name: buf.build/emoney-microservice/account-service # A unique name for your module
+deps:
+  # This line automatically fetches googleapis for you
+  - buf.build/googleapis/googleapis

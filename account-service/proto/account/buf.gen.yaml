@@ -1,0 +1,16 @@
+version: v1
+plugins:
+  # For Go types (protoc-gen-go)
+  - plugin: go
+    out: gen/go
+    opt: paths=source_relative
+
+  # For gRPC services (protoc-gen-go-grpc)
+  - plugin: go-grpc
+    out: gen/go
+    opt: paths=source_relative
+
+  # For the gRPC-Gateway (protoc-gen-grpc-gateway)
+  - plugin: grpc-gateway
+    out: gen/go
+    opt: paths=source_relative
